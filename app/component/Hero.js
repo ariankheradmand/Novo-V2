@@ -13,18 +13,20 @@ function Hero() {
   ];
 
   return (
-    <div className="w-full flex items-center justify-center">
-      <div className="flex items-center overflow-auto gap-4 w-11/12 h-24 border-r-2 border-l-2 rounded-lg">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="border-white flex-shrink-0 border w-40 text-center py-2 rounded-md text-white"
-          >
-            {item}
-          </div>
-        ))}
-      </div>
-    </div>
+    <div className="w-full flex items-center justify-center relative">
+  <div className="flex items-center overflow-auto gap-4 w-11/12 h-24 rounded-lg relative z-10">
+    {items.map((item, index) => (
+      <button
+        key={index}
+        className="border-white flex-shrink-0 border w-40 text-center py-2 rounded-md text-white hover:bg-accent hover:text-black hover:border-black focus:bg-accent focus:text-black focus:border-black"
+      >
+        {item}
+      </button>
+    ))}
+  </div>
+  <div className="absolute left-0 top-0 h-full  opacity-20 w-8 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
+  <div className="absolute right-0 top-0 h-full opacity-20  w-8 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+</div>
   );
 }
 

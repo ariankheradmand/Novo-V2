@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className="font-vazirmatn antialiased"
+        className="font-vazirmatn antialiased "
       >
         {children}
       </body>

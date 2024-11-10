@@ -12,6 +12,9 @@ module.exports = {
         secondary: "black",
         accent : "#FEC800"
       },
+      fontFamily: {
+        vazirmatn: ['Vazirmatn', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -4,7 +4,7 @@ import { LuCakeSlice } from "react-icons/lu";
 import { MdOutlineLocalCafe } from "react-icons/md";
 function Header() {
   return (
-    <header className="w-full relative mb-12">
+    <header className="w-full relative mb-16">
       <div className="flex w-full h-32 bg-accent">
         <div className="w-6/12 relative">
           <div className="bg-white w-fit h-fit flex items-center justify-center absolute p-1 rounded-md left-4 top-4">

@@ -18,7 +18,7 @@ function Hero() {
     {items.map((item, index) => (
       <button
         key={index}
-        className="border-white flex-shrink-0 border w-40 text-center py-2 rounded-md text-white hover:bg-accent hover:text-black hover:border-black focus:bg-accent focus:text-black focus:border-black"
+        className="border-white flex-shrink-0 border w-40 text-center py-2 rounded-md text-white hover:bg-accent hover:text-black hover:border-black focus:bg-accent focus:text-black focus:border-black transition-all "
       >
         {item}
       </button>
